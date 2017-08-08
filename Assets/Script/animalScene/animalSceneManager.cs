@@ -60,6 +60,7 @@ public class animalSceneManager : MonoBehaviour {
             PlayerPrefs.SetInt("Int", _int);
             PlayerPrefs.SetInt("Luk", luk);
             PlayerPrefs.SetInt("Money", money);
+            Destroy(GameObject.FindWithTag("GameController"));
             SceneManager.LoadScene("clearScene");
         }
     }
